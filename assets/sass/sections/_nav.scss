@@ -1,0 +1,78 @@
+.navbar {
+  transition: background-color 0.5s ease;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 20px 15px;
+  .navbar-nav {
+    .nav-item {
+      padding-right: 20px;
+      padding-left: 20px;
+      .nav-link {
+        position: relative;
+        color: white;
+        padding-left: 0;
+        padding-right: 0;
+        @media (min-width: $min-xl) {
+          &:before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 1.5px;
+            bottom: -30px;
+            left: 0;
+            background-color: #fff;
+            visibility: hidden;
+            transition: all 0.3s ease-in-out;
+          }
+        }
+        &:hover:before {
+          visibility: visible;
+          width: 100%;
+        }
+        
+      }
+      &:last-of-type {
+        .nav-link {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 58px;
+    top: 2px;
+    left: -12px;
+    max-width: 190px;
+    &:after {
+      content: "";
+      background-color: rgba(255, 255, 255, 0.3);
+      height: calc(100% + 41px);
+      width: 1px;
+      position: absolute;
+      bottom: -19px;
+      right: -25px;
+    }
+  }
+  &.scrolled {
+    background: white;
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          color: black;
+          @media (min-width: $min-xl) {
+            &:before {
+              background-color: black;
+            }
+          }
+        }
+      }
+    }
+    #nav-icon1 span,
+    #nav-icon3 span,
+    #nav-icon4 span {
+      background: black;
+    }
+  }
+}

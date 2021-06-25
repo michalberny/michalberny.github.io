@@ -1,0 +1,31 @@
+.footer {
+  padding: 40px 0;
+  @media(max-width: $max-md) {
+    padding: 25px 0; 
+  }
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    @media(max-width: $max-lg) {
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+    .creators {
+      @media(max-width:$max-lg) {
+        padding: 10px 0;
+      }
+      
+      .only-mobile {
+        @media(min-width: 575px) { 
+          display: none;  
+        }
+      } 
+      .only-desktop {
+        @media(max-width: 575px) { 
+          display: none;   
+        }
+      }
+    }
+  }
+}

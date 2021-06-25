@@ -1,0 +1,14 @@
+{
+  "name": "uttro",
+  "version": "1.0.0",
+  "description": "uttro",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass assets/sass/main.scss assets/css/main.css -w"
+  },
+  "author": "Unizone",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}

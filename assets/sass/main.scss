@@ -1,0 +1,62 @@
+@import "commons/reset.scss";
+@import "commons/colors.scss";
+@import "commons/variables.scss";
+@import "commons/class-variables.scss";
+@import "commons/typography.scss";
+@import "commons/animations.scss";
+
+@import "sections/nav.scss";
+@import "sections/header.scss";
+@import "sections/footer.scss";
+@import "sections/section-1.scss";
+@import "sections/section-2.scss";
+@import "sections/section-3.scss";
+@import "sections/section-4.scss";
+@import "sections/section-5.scss";
+@import "sections/section-6.scss";
+
+
+body {
+    font-size: 100%;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    background: #1C2022; 
+}
+
+:focus {
+  outline: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    &:hover {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+h1,h2,h3,h4,h5,a,ul,li,p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.g-indentation {
+  padding: 80px 0;
+}
+
+.g-indentation-top-only {
+  padding: 80px 0 0 0;
+}
+
+.g-max-content {
+  max-width: 635px;
+}
+
+ 
